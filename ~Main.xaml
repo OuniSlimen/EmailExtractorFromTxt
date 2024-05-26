@@ -102,6 +102,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,760" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -135,7 +136,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="This is a test mail." Cc="ouni.slimeno@gmail.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="353.6,169.6" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="High" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Testing a robot" To="[currentText]">
+            <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;This is a test mail.&quot; + currentText]" Cc="ouni.slimeno@gmail.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="353.6,169.6" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="High" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Testing a robot" To="slimen.ouni@esen.tn">
               <ui:SendOutlookMail.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
               </ui:SendOutlookMail.Files>
